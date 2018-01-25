@@ -54,8 +54,8 @@
                                         </constraints>
                                         <state key="normal" image="smackBurger"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHN-Dp-qI9">
-                                        <rect key="frame" x="166" y="44.5" width="42" height="23.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHN-Dp-qI9">
+                                        <rect key="frame" x="169" y="44.5" width="36" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -108,7 +108,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxt-Hf-p7s">
-                                <rect key="frame" x="281" y="94" width="22" height="22"/>
+                                <rect key="frame" x="271" y="94" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Guw-qR-rEI">
@@ -118,6 +118,10 @@
                                     <constraint firstAttribute="height" constant="75" id="OQ5-t4-WEj"/>
                                 </constraints>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5M8-mg-D2D">
+                                <rect key="frame" x="0.0" y="136" width="268" height="416"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5D-mf-wwJ">
                                 <rect key="frame" x="111" y="591" width="45" height="36"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
@@ -129,13 +133,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="D0u-4Z-QU9" firstAttribute="top" secondItem="ePL-H0-5Sb" secondAttribute="bottom" constant="20" id="5Tu-tT-1no"/>
+                            <constraint firstItem="5M8-mg-D2D" firstAttribute="top" secondItem="Oxt-Hf-p7s" secondAttribute="bottom" constant="20" id="69s-18-Ugu"/>
                             <constraint firstItem="Z5D-mf-wwJ" firstAttribute="centerY" secondItem="Guw-qR-rEI" secondAttribute="centerY" id="BZj-Un-I1e"/>
                             <constraint firstItem="ePL-H0-5Sb" firstAttribute="top" secondItem="OKT-h8-Lvh" secondAttribute="top" constant="24" id="L71-pz-g2g"/>
                             <constraint firstItem="Guw-qR-rEI" firstAttribute="leading" secondItem="OKT-h8-Lvh" secondAttribute="leading" constant="16" id="SI8-9T-O8A"/>
+                            <constraint firstItem="5M8-mg-D2D" firstAttribute="trailing" secondItem="OKT-h8-Lvh" secondAttribute="trailing" constant="-107" id="TDL-ar-JYf"/>
                             <constraint firstItem="Z5D-mf-wwJ" firstAttribute="leading" secondItem="Guw-qR-rEI" secondAttribute="trailing" constant="20" id="TG4-3b-JBh"/>
+                            <constraint firstItem="5M8-mg-D2D" firstAttribute="leading" secondItem="OKT-h8-Lvh" secondAttribute="leading" id="ZfD-uG-bnC"/>
+                            <constraint firstItem="Guw-qR-rEI" firstAttribute="top" secondItem="5M8-mg-D2D" secondAttribute="bottom" constant="20" id="fU5-HH-Eh5"/>
                             <constraint firstItem="OKT-h8-Lvh" firstAttribute="bottom" secondItem="Guw-qR-rEI" secondAttribute="bottom" constant="20" id="few-Re-Z2s"/>
                             <constraint firstItem="D0u-4Z-QU9" firstAttribute="leading" secondItem="OKT-h8-Lvh" secondAttribute="leading" constant="16" id="hKL-RE-Wy2"/>
-                            <constraint firstItem="OKT-h8-Lvh" firstAttribute="trailing" secondItem="Oxt-Hf-p7s" secondAttribute="trailing" constant="72" id="hRg-ch-ReX"/>
+                            <constraint firstItem="OKT-h8-Lvh" firstAttribute="trailing" secondItem="Oxt-Hf-p7s" secondAttribute="trailing" constant="82" id="hRg-ch-ReX"/>
                             <constraint firstItem="ePL-H0-5Sb" firstAttribute="leading" secondItem="OKT-h8-Lvh" secondAttribute="leading" constant="16" id="j8G-k2-byq"/>
                             <constraint firstItem="Oxt-Hf-p7s" firstAttribute="centerY" secondItem="D0u-4Z-QU9" secondAttribute="centerY" id="mzJ-4p-OVA"/>
                         </constraints>
